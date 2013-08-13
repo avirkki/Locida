@@ -1,0 +1,2 @@
+export(getData)
+export(newLocida)
