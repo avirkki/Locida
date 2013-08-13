@@ -1,5 +1,6 @@
 package fi.vtt.locida;
 
+import com.vaadin.annotations.Theme;
 import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.Property.ValueChangeListener;
 import com.vaadin.server.Sizeable;
@@ -35,6 +36,7 @@ import fi.vtt.RVaadin.RUpload;
  * Main UI class
  */
 @SuppressWarnings("serial")
+@Theme("vtt")
 public class LocidaUI extends UI {
 
 	/* Application main window and the corresponding R instance */
