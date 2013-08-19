@@ -14,7 +14,8 @@ What is Locida Good For
 
 A running prototype of Locida can be tested at [bicbox.vtt.fi](http://bicbox.vtt.fi:8080/Locida).
 
-The R package is [Locida_1.0.tar.gz](Rpkg/Locida_1.0.tar.gz?raw=true).
+The R package suitable for Linux is [Locida_1.0.tar.gz](Rpkg/Locida_1.0.tar.gz?raw=true). Windows users should choose [Locida_1.0.zip](Rpkg/Locida_1.0.zip?raw=true).
+
 
 ![Locida_overview.png](Documentation/images/Locida_overview.png?raw=true)
 **Figure.** An example Locida output comparing 1-D NMR spectrum measurements from treated Nicotiana Tabacum plant samples agains two different (but indistinguishable) control groups. (Click the image to enlarge it.)
