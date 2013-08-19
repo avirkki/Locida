@@ -1,0 +1,33 @@
+#!/bin/bash
+
+## Refresh and re-compile the Windows version of an R package using wine
+##
+## Author(s) : Arho Virkki 
+## Copyright : VTT Technical Reseach Centre of Finland
+## Original date : 2013-03-01
+
+## Instructions to build for Windows under R can be found at:
+## http://thomas.zumbrunn.name/blog/2011/12/17/buildung-r-binary-packages-
+##        for-windows-with-wine-under-gnulinux/
+##
+## In summary, all one needs to do under Ubuntu 12.04 is to
+##
+## 1. Install wine with "sudo apt-get wine"
+## 2. Download the Windows version of R and install it with e.g.
+##    "wine ~/Downloads/R-3.0.1-win.exe"
+## 3. Download zip from ftp://ftp.info-zip.org/pub/infozip/win32/zip300xn.zip
+##    and install it.
+## 4. Issue "wine regedit" to edit HKEY_CURRENT_USER -> Environment -> PATH 
+##    to read "C:\Program Files\R\R-3.0.1\bin\i386;C:\Program Files\infozip"
+##    (or similar)
+## 5. Build the R packages with "wine R CMD INSTALL --build <package>.tar.gz"
+
+
+
+./rebuildLocida
+
+rm Locida_1.0.zip
+wine R CMD INSTALL --build Locida_1.0.tar.gz
+
+
+

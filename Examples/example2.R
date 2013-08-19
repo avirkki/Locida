@@ -7,10 +7,9 @@
 
 library(Locida)
 
-
 ## Read the data set from Excel file (using the gdata package).
 library(gdata)
-fname <- "../ExampleData/SR1_July2011_calibr_plain.xlsx"
+fname <- "SR1_July2011_calibr_plain.xlsx"
 W <- read.xls(fname, check.names=FALSE,
     stringsAsFactors=FALSE)
 
