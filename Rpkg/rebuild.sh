@@ -1,14 +1,14 @@
 #!/usr/bin/Rscript
 
 ##
-## Refresh and re-compile the an R package
+## Refresh and re-compile an R package
 ##
-## Run with sudo to install the package globally into 
-## ‘/usr/local/lib/R/site-library’
+## Run with sudo to install the package globally (in Linux, into 
+## ‘/usr/local/lib/R/site-library’)
 
 ## Author(s)     : Arho Virkki
 ## Copyright     : VTT Technical Reseach Centre of Finland
-## Original date : 2013-03-01
+## Original date : 2013-08-27
 
 PACKAGE_NAME <- "Locida"
 PACKAGE_VERSION <- "1.0"

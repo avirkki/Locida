@@ -4,7 +4,7 @@
 ##
 ## Author(s) : Arho Virkki 
 ## Copyright : VTT Technical Reseach Centre of Finland
-## Original date : 2013-03-01
+## Original date : 2013-08-27
 
 ## Instructions to build for Windows under R can be found at:
 ## http://thomas.zumbrunn.name/blog/2011/12/17/buildung-r-binary-packages-
@@ -24,10 +24,15 @@
 
 
 
-./rebuildLocida
+PACKAGE_NAME="Locida"
+PACKAGE_VERSION="1.0"
 
-rm Locida_1.0.zip
-wine R CMD INSTALL --build Locida_1.0.tar.gz
+## Delete the old Build
+rm $PACKAGE_NAME\_$PACKAGE_VERSION.zip
+
+## Build the Windows version. (Using less shield the Terminal from the 
+## harmfull escape characters from Wine).
+wine R --vanilla CMD INSTALL --build $PACKAGE_NAME\_$PACKAGE_VERSION.tar.gz | less
 
 
 
