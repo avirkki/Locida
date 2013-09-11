@@ -37,7 +37,7 @@ print(factors)
 ## the plot can be any character strings.
 ## 
 treated <- factors[1]
-controls <- factors[5:6]
+controls <- factors[5]
 
 designFrame <- data.frame( 
     samples[["gm_group_description"]] %in% treated,
